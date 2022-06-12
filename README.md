@@ -114,4 +114,8 @@
 - Docker
 
 ## iOS 
-- 작성 예정
+- Testing: Quick, Nimble
+- Local Search: MapKit
+- Project File Management: Tuist
+- Dependency Injection: Swinject
+- Linter: SwiftLint
