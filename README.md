@@ -25,8 +25,8 @@
 # 팀원
 
 ## BE ☕
-- Riako [링크]()
-- Ron2 [링크]()
+- Riako [@nanuen](https://github.com/naneun)
+- Ron2 [@cmsskkk](https://github.com/cmsskkk)
 
 ## iOS 
 - Chez [링크]()
@@ -73,19 +73,25 @@
 
 <details>
 <summary> 
-<h3>Ron2 - 00을 해결한 경험 (작성 예정)</h3>
+<h3>Ron2 - 외부 API 호출을 restTemplate(동기) -> webclient(비동기) 리팩토링</h3>
 </summary>
-
-- 어떻게 만드는 게 목표였는지,
-- 어떤 문제가 있었는지,
-- 문제를 해결하기 위해 어떤 시도를 했는지,
-- 어떻게 해결했는지.
+- [RestTemplate에서 WebClient로 리팩토링해보기](https://velog.io/@cmsskkk/RestTemplate-WebClient-refactoring)
 </details>
 
 # 사용한 기술
 
 ## BE ☕
-- 작성 예정
+
+- java 11
+- Spring boot 2.67
+- Spring Data Jpa
+- querydsl 5.0.0
+- MySql 8.x
+- Swagger 2.0
+- AWS EC2, ubuntu 20.04
+- VPC 
+- GitHub Actions
+- Docker
 
 ## iOS 
 - 작성 예정
