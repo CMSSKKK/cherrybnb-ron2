@@ -24,14 +24,10 @@
 
 # 팀원
 
-## BE ☕
-- Riako [@nanuen](https://github.com/naneun)
-- Ron2 [@cmsskkk](https://github.com/cmsskkk)
-
-## iOS 
-- Chez [링크]()
-- Eddy [@BumgeunSong](https://github.com/BumgeunSong)
-
+|    BE ☕  |   iOS     |
+| -------- | ---------- |
+|  Riako [@naneun](https://github.com/naneun)  |  Chez [@asqw887](https://github.com/asqw887)  |
+|  Ron2 [@cmsskkk](https://github.com/cmsskkk) |  Eddy [@BumgeunSong](https://github.com/BumgeunSong)  |
 
 # 문제 해결
 > 가장 기억에 남는 문제 해결 경험
@@ -114,8 +110,10 @@
 - Docker
 
 ## iOS 
-- Testing: Quick, Nimble
-- Local Search: MapKit
-- Project File Management: Tuist
-- Dependency Injection: Swinject
-- Linter: SwiftLint
+- Language: `Swift`
+- UI: `UIKit`
+- Testing: `Quick`, `Nimble`
+- Local Search: `MapKit`
+- Project File Management: `Tuist`
+- Dependency Injection: `Swinject`
+- Linter: `SwiftLint`
