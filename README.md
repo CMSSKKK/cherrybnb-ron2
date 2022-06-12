@@ -21,7 +21,11 @@
 ## BE ☕
 
 > API 기능 보여주기
+api 문서: http://54.180.9.224/swagger-ui/index.html
 
+#### 사용 중인 api
+- 숙소 목록 조회하기 /rooms
+- 숙박비 빈도값 조회하기 /rooms/prices
 
 # 팀원
 
@@ -79,13 +83,9 @@
 
 <details>
 <summary> 
-<h3>Riako - 00을 해결한 경험 (작성 예정)</h3>
+<h3>Riako - OAuth GitHub, Google 로그인 프로세스</h3>
 </summary>
-
-- 어떻게 만드는 게 목표였는지,
-- 어떤 문제가 있었는지,
-- 문제를 해결하기 위해 어떤 시도를 했는지,
-- 어떻게 해결했는지.
+- [간단한 OAuth 기능 구현하기](https://velog.io/@naneun/Spring-Boot-OAuth-GitHub-Google-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
 </details>
 
 <details>
