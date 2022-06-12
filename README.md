@@ -8,13 +8,12 @@
 ## iOS 
 
 
-|    홈 화면   |   위치 검색    |
-| :--------: | :----------: |
-|            |              |
+|   위치 검색    |   날짜 검색   |   가격 검색    |
+| :----------: | :--------: | :----------: |
+|  <img src="https://user-images.githubusercontent.com/17468015/173227973-4daf7840-bc63-47f8-abfd-f4dd029a82c8.gif" width="300"> | <img src="https://user-images.githubusercontent.com/17468015/172120869-0b5b1cb6-1dbc-4a17-9655-87b474d03272.gif" width="300">  | <img src="https://user-images.githubusercontent.com/59790540/172773103-21ad4046-28f2-4428-a807-cd858000371d.gif" width="300">  |
 
-|   날짜 검색   |   가격 검색    |
-| :--------: | :----------: |
-|            |              |
+
+
 
 
 ## BE ☕
