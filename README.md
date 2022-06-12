@@ -2,6 +2,8 @@
 - 에버비앤비 스타일 숙박 검색 앱
 - 개발 기간: 22.05.23 - 22.06.12
 
+<img src="https://user-images.githubusercontent.com/17468015/173228081-17b727e3-2395-4999-8bfc-5e4d8f472658.png" width="350">
+
 
 # 기능 소개
 
