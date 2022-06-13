@@ -26,6 +26,7 @@ api 문서: http://54.180.9.224/swagger-ui/index.html
 #### 사용 중인 api
 - 숙소 목록 조회하기 /rooms
 - 숙박비 빈도값 조회하기 /rooms/prices
+- 사용자 위치와 인기여행지 거리 및 시간 /distance/times
 
 # 팀원
 
