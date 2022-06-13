@@ -86,7 +86,15 @@ api 문서: http://54.180.9.224/swagger-ui/index.html
 <summary> 
 <h3>Riako - OAuth GitHub, Google 로그인 프로세스</h3>
 </summary>
-- [간단한 OAuth 기능 구현하기](https://velog.io/@naneun/Spring-Boot-OAuth-GitHub-Google-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
+	
+- [간단한 OAuth 로그인 기능 구현하기](https://velog.io/@naneun/Spring-Boot-OAuth-GitHub-Google-%EB%A1%9C%EA%B7%B8%EC%9D%B8)
+	
+- OAuth 와 JWT 토큰을 사용하여 로그인 기능을 구현합니다.
+	- 여러 벤더에서 로그인 처리하는 로직을 추상화하여 통일시켰습니다.
+	- WebClient 를 사용하여 OAuth 로그인 기능을 구현했습니다.
+	- OAuth 기능을 사용하여 받아온 사용자 정보로 jwt 토큰을 생성합니다.
+	- 해당 토큰을 클라이언트가 저장하고 API 를 요청할 때마다 헤더에 담아 보내고 서버는 이를 검증합니다.
+	
 </details>
 
 <details>
