@@ -110,7 +110,12 @@ api 문서: http://54.180.9.224/swagger-ui/index.html
 <summary> 
 <h3>Ron2 - 외부 API 호출을 restTemplate(동기) -> webclient(비동기) 리팩토링</h3>
 </summary>
+	
 - [RestTemplate에서 WebClient로 리팩토링해보기](https://velog.io/@cmsskkk/RestTemplate-WebClient-refactoring)
+	- 위치 좌표간의 실제 자동차로 이동하는 거리 및 이동시간을 반환하는 Kakao-navi-api를 사용하였습니다.
+	- 사용자의 좌표와 인기 여행지 8곳을 RestTemplate으로 거리 및 시간 데이터를 반복문으로 동기적으로 처리하던 것을 리팩토링하였습니다.
+	- WebClient를 활용해서 비동기적으로 처리해서 기존 9.xx초 걸리던 로직을 2.xx 이내로 줄였습니다. 
+	- WebClient의 사용법 및 비동기 flow를 익히는 계기가 되었습니다. 
 </details>
 
 # 사용한 기술
