@@ -3,6 +3,7 @@ package com.team14.cherrybnb.revervation.domain;
 import com.team14.cherrybnb.auth.domain.Member;
 import com.team14.cherrybnb.room.domain.Room;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -13,6 +14,7 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Reservation {
 
     @Id
@@ -39,17 +41,11 @@ public class Reservation {
     @JoinColumn(name = "member_id")
     private Member member;
 
-    public Reservation(LocalDateTime checkIn, LocalDateTime checkOut,
+    public static Reservation of(LocalDateTime checkIn, LocalDateTime checkOut,
                        int guestCount, BigDecimal totalPrice,
                        ReservationState state, Room room, Member member) {
 
-        this.checkIn = checkIn;
-        this.checkOut = checkOut;
-        this.guestCount = guestCount;
-        this.totalPrice = totalPrice;
-        this.state = state;
-        this.room = room;
-        this.member = member;
+        return new Reservation(null, checkIn, checkOut, guestCount, totalPrice, state, room, member);
     }
 
     public void cancel() {

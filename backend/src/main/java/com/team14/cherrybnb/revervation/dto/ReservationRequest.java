@@ -25,7 +25,7 @@ public class ReservationRequest {
     private BigDecimal totalPrice;
 
     public Reservation toEntity(Member member, Room room) {
-        return new Reservation(this.checkIn, this.checkOut, this.guestCount,
+        return Reservation.of(this.checkIn, this.checkOut, this.guestCount,
                 this.totalPrice, ReservationState.COMPLETE, room, member);
     }
 }

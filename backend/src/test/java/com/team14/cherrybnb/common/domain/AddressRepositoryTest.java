@@ -1,20 +1,26 @@
 package com.team14.cherrybnb.common.domain;
 
+import com.team14.cherrybnb.common.config.WebConfig;
 import com.team14.cherrybnb.common.util.GeometryUtils;
-import org.assertj.core.api.Assertions;
+import com.team14.cherrybnb.openapi.dummy.Position;
 import org.junit.jupiter.api.Test;
+import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Geometry;
+import org.locationtech.jts.geom.Point;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase.*;
 
+@Import(WebConfig.class)
 @DataJpaTest
-@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)
+@AutoConfigureTestDatabase(replace = Replace.NONE)
 class AddressRepositoryTest {
 
     AddressRepository addressRepository;
@@ -36,6 +42,5 @@ class AddressRepositoryTest {
         List<Address> addresses = addressRepository.findAddressWithin(circle);
 
         assertThat(addresses.size()).isEqualTo(52);
-
     }
 }

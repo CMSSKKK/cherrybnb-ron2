@@ -2,6 +2,7 @@ package com.team14.cherrybnb.room.domain;
 
 import com.team14.cherrybnb.auth.domain.Member;
 import lombok.AccessLevel;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -10,6 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Wish {
 
     @Id
@@ -25,8 +27,7 @@ public class Wish {
     @JoinColumn(name = "room_id")
     private Room room;
 
-    public Wish(Member member, Room room) {
-        this.member = member;
-        this.room = room;
+    public static Wish of(Member member, Room room) {
+        return new Wish(null, member, room);
     }
 }

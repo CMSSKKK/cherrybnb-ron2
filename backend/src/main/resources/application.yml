@@ -10,6 +10,9 @@ spring:
       filter:
         enabled: true
 
+#  jackson:
+#    property-naming-strategy: SNAKE_CASE
+
   jpa:
     hibernate:
       ddl-auto: update
@@ -29,3 +32,11 @@ logging.level:
   org.hibernate.SQL: debug
 
 kakao.rest.api.key: ${KAKAO_REST_KEY}
+
+github:
+  client:
+    id: ${GITHUB_CLIENT_ID}
+    secrets: ${GITHUB_SECRETS}
+
+server:
+  port: 8080

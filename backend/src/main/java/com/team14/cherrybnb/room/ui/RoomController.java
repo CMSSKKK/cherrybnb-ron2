@@ -41,8 +41,8 @@ public class RoomController {
             response = RoomCardResponse.class
     )
     @GetMapping
-    public Page<RoomCardResponse> getRooms(Pageable pageable, SearchCondition searchCondition) {
-        return null;
+    public Page<RoomCardResponse> getRooms(SearchCondition searchCondition, Pageable pageable) {
+        return roomService.getRoomsBySearchCondition(searchCondition, pageable);
     }
 
     @ApiOperation(
@@ -53,6 +53,7 @@ public class RoomController {
     )
     @GetMapping("/region")
     public ResponseEntity<List<RoomCardResponse>> getRoomsByRegionId(@RequestParam Long id) {
+        // TODO
         return null;
     }
 

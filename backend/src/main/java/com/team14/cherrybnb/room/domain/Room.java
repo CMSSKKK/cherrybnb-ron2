@@ -5,6 +5,7 @@ import com.team14.cherrybnb.common.domain.Address;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.math.BigDecimal;
@@ -14,6 +15,7 @@ import java.util.List;
 
 @Entity
 @Getter
+@ToString(exclude = {"address", "member", "reviews", "roomImages"})
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 public class Room {
 
@@ -47,13 +49,14 @@ public class Room {
     private List<RoomImage> roomImages = new ArrayList<>();
 
     public Room(String name, RoomInfo roomInfo, String description,
-                RoomPriceCondition roomPriceCondition, Address address) {
+                RoomPriceCondition roomPriceCondition, Address address, Member member) {
 
         this.name = name;
         this.roomInfo = roomInfo;
         this.description = description;
         this.roomPriceCondition = roomPriceCondition;
         this.address = address;
+        this.member = member;
     }
 
     public BigDecimal calculateRating() {

@@ -1,8 +1,7 @@
-package com.team14.cherrybnb.openapi;
+package com.team14.cherrybnb.openapi.dummy;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 
 @Getter
 @AllArgsConstructor

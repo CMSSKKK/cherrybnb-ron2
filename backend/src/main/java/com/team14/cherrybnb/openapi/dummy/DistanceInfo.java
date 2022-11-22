@@ -1,4 +1,4 @@
-package com.team14.cherrybnb.openapi;
+package com.team14.cherrybnb.openapi.dummy;
 
 import lombok.Getter;
 
